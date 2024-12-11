@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Gráfica 2{% endblock %}
+
+{% block content %}
+<section class="chart-section">
+    <h2 class="section-title">Gráfico de líneas</h2>
+    <p class="chart-description"> Datos: Platform, Suma de global_sales, Cuenta de Year</p>
+</section>
+    <div class="iframe-container">
+        <iframe 
+            src="https://datawrapper.dwcdn.net/EBkzN/1/" 
+            title="Gráfica interactiva"
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
+    <div class="back-button">
+        <a href="/Men" class="button">Volver al menú</a>
+    </div>
+{% endblock %}

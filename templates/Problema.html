@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <!-- Presentación -->
+    <section class="introduction">
+        <h1 class="section-title">Videojuegos</h1>
+        <p class="justified-text">
+            <strong>Video Games Sales Dataset:</strong> Información detallada sobre ventas de videojuegos en diferentes regiones del mundo (América del Norte, Europa, Japón, otras regiones).
+        </p>
+
+        <h1 class="section-title">Problema</h1>
+        <p class="justified-text">
+            Muchas empresas de videojuegos enfrentan el desafío de identificar los mercados geográficos más rentables y las plataformas más adecuadas para maximizar sus ingresos. Este desafío se complica debido a la diversidad de factores que influyen en las ventas de los videojuegos, como el año de lanzamiento, el género del juego, la plataforma en la que está disponible, y el editor o distribuidor responsable. Sin una comprensión clara y detallada de las ventas por región y cómo estas se integran en las ventas globales, las empresas corren el riesgo de tomar decisiones basadas en información incompleta o inexacta.
+Un juego podría tener un excelente rendimiento en Norteamérica (NA) pero generar resultados bajos en Europa (EU) o Japón (JP), lo que indicaría que la estrategia de marketing o distribución no está optimizada para esos mercados. Además, las plataformas juegan un papel crucial, ya que la preferencia por consolas específicas puede variar significativamente entre regiones, afectando la penetración del mercado y los ingresos potenciales.
+También la elección del género (Genre) y la afinidad del público objetivo con dicho género en diferentes regiones. Un género popular en Japón, como los RPG, podría no tener el mismo nivel de aceptación en América del Norte, donde los juegos de acción o deportes suelen ser más populares.
+La falta de análisis profundo de estas variables limita la capacidad de las empresas para expandirse y aprovechar las oportunidades globales, lo que a su vez afecta su competitividad en un mercado altamente dinámico y competitivo. Sin una estrategia basada en datos, las empresas podrían invertir recursos en mercados con bajo potencial o en plataformas que no maximizan su alcance, desperdiciando oportunidades valiosas de crecimiento y rentabilidad.
+        </p>
+
+        <!-- Imagen del problema -->
+        <div class="menu-container">
+            <img src="/static/Problem1.png" alt="Imagen del problema" class="menu-image">
+        </div>
+    </section>
+
+    <!-- Botón de regreso -->
+    <div class="back-button">
+        <a href="/Info" class="button">Información</a>
+    </div>
+
+{% endblock %}

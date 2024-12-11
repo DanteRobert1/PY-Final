@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Gráfica 5{% endblock %}
+
+{% block content %}
+<section class="chart-section">
+    <h2 class="section-title">Gráfico de BoxPlot</h2>
+    <p class="chart-description">Distribución de Ventas Regionales</p>
+    <p class="chart-description">Datos: EU_Sales, JP_Sales, NA_Sales, Other_Sales, Plataform  </p>
+</section>
+    <div>
+        <img src="/static/Boxplot.jpg" alt="Imagen del menú" class="menu-image">
+    </div>
+    <section class="chart-section">
+    <p class="justified-text">
+        En esta grafica se puede ver en como el top 5 de las plataformas estan bajas, tanto asi que la mayoría no llega ni a los 20 millones, sin embargo en cada plataforma, la región que mas a podido vender mas seria NA llegando a mas de 40 millones de ventas en la Wii, tomando la delantera en lo demás regiones, no se puede decir lo mismo de las otras regiones un ejemplo seria JP, que se podría decir que unas de las mas bajas en vender de las plataformas establecidas, y no se diga las otras regiones. Pero este patrón no solo refleja diferencias culturales, sino también estrategias de mercado específicas que podrían haber sido mejor adaptadas a estas regiones. Sin embargo, la Wii sigue siendo un ejemplo de cómo una plataforma puede superar las expectativas y liderar las ventas globales, estableciendo un estándar difícil de alcanzar para otras consolas, ya que tienen algunos datos de distribución que no va con su media, estableciéndolo a lo que más vendió de las plataformas 
+    </p>
+</section>
+    <div class="back-button">
+        <a href="/Men" class="button">Volver al menú</a>
+    </div>
+{% endblock %}

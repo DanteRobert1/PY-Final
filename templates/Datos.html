@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<section class="data-description">
+    <h1 class="section-title">Datos Disponibles</h1>
+    <p class="justified-text">
+        <strong>Los datos disponibles incluyen información detallada sobre los videojuegos y sus ventas, distribuidos en las siguientes categorías:</strong> 
+    </p>
+    <ul class="justified-text">
+        <li><strong>Name:</strong> Nombre del videojuego. INT</li>
+        <li><strong>Platform:</strong> Plataforma de juego (ejemplo: PlayStation, Xbox, PC). STRING</li>
+        <li><strong>Year:</strong> Año de lanzamiento. INT</li>
+        <li><strong>Genre:</strong> Género del videojuego (ejemplo: Acción, Aventura, Deportes). STRING</li>
+        <li><strong>Publisher:</strong> Editor o distribuidor del videojuego. STRING</li>
+        <li><strong>Ventas por región: INT</strong>
+            <ul>
+                <li><strong>NA_Sales:</strong> Ventas en América del Norte.</li>
+                <li><strong>EU_Sales:</strong> Ventas en Europa.</li>
+                <li><strong>JP_Sales:</strong> Ventas en Japón.</li>
+                <li><strong>Other_Sales:</strong> Ventas en otras regiones.</li>
+            </ul>
+        </li>
+        <li><strong>Global_Sales:</strong> Ventas globales totales. INT</li>
+    </ul>
+</section>
+<div class="back-button">
+    <a href="/Men" class="button">Menu</a>
+</div>
+{% endblock %}

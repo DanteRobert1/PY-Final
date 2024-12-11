@@ -1,0 +1,291 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1.section-title {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h2.section-title {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 2.2em;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+
+/* Header styles */
+header {
+    background-color: #000000; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 20px 20px; /* Padding to add space around logo and title */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically align logo and title */
+    justify-content: flex-start; /* Align logo and title to the left */
+}
+
+/* Logo Styling */
+header .logo {
+    height: 100px; /* Adjust the logo size */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Small gap between logo and title */
+}
+
+/* Header Title */
+header h1 {
+    font-size: 3.5em; /* Make the title bigger */
+    font-family: 'Century Gothic', sans-serif; /* Use Century Gothic font */
+    color: #fff; /* White color */
+    margin: 0;
+}
+
+
+/* Menu container styles */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu item styles */
+.menu-item {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.menu-itemHead {
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.menu-itemHead:hover {
+    transform: scale(1.05);
+}
+
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.graph-name {
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #007bff;
+}
+
+iframe {
+    width: 100%;
+    height: 125vh; /* Cambia a un valor mayor si es necesario */
+    border: none;
+}
+
+.justified-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.introduction {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.menu-image {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: auto; /* Mantendrá la proporción de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+}
+
+.data-description {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.data-description h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.justified-text {
+    text-align: justify;
+}
+
+.data-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data-list li {
+    font-size: 1.1em;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data-list li:last-child {
+    border-bottom: none;
+}
+
+.data-list li {
+    font-size: 1.1em;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data-list li:last-child {
+    border-bottom: none;
+}
+
+.region-sales {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    background-color: #0044ff;
+}
+
+.scatter-plot {
+    margin-bottom: 40px;
+}
+
+.scatter-plot h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.justified-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.big-text {
+    font-size: 4em; /* Tamaño grande */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.chart-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+

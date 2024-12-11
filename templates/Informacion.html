@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<section class="objectives">
+    <h2 class="section-title">Objetivos</h2>
+    <ol class="justified-text">
+        <li>
+            <strong>Analizar la rentabilidad por región:</strong> Determinar qué regiones (NA, EU, JP, Other) generan mayores ventas para los videojuegos, con el objetivo de enfocar esfuerzos de marketing y distribución en los mercados más lucrativos.
+        </li>
+        <li>
+            <strong>Identificar las plataformas más rentables:</strong> Evaluar las plataformas que generan mayores ingresos en términos de ventas globales para optimizar el desarrollo y la publicación de futuros títulos en dichas plataformas.
+        </li>
+        <li>
+            <strong>Segmentar el mercado por género y editor:</strong> Comprender cómo los géneros y editores influyen en las ventas regionales y globales para diseñar estrategias de contenido y alianzas más efectivas.
+        </li>
+    </ol>
+</section>
+
+<!-- Imagen relacionada con los objetivos -->
+<div class="menu-container">
+    <div>
+        <img src="/static/Info1.png" alt="Imagen de los objetivos" class="menu-image">
+    </div>
+</div>
+
+<section class="kpis">
+    <h2 class="section-title">Establecimiento de KPIs</h2>
+    <ol class="justified-text">
+        <li>
+            <strong>Crecimiento de ventas regionales (%):</strong> Incremento en las ventas en regiones clave (NA, EU, JP, Other) tras implementar estrategias basadas en los datos.
+        </li>
+        <li>
+            <strong>Plataforma con mayor participación (%) en ingresos:</strong> Identificar la plataforma que contribuye más al total de ventas globales y aumentar su proporción en el portafolio.
+        </li>
+        <li>
+            <strong>Ingresos por género de videojuego (% del total):</strong> Evaluar qué géneros tienen mejor aceptación en cada región y su contribución a las ventas globales.
+        </li>
+    </ol>
+</section>
+
+<!-- Imagen relacionada con los KPIs -->
+<div class="menu-container">
+    <div>
+        <img src="/static/Info2.jpeg" alt="Imagen de los KPIs" class="menu-image">
+    </div>
+</div>
+
+<!-- Botón para regresar -->
+<div class="back-button">
+    <a href="/Dat" class="button">Datos</a>
+</div>
+
+{% endblock %}

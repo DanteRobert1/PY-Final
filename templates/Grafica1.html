@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Gráfica 1{% endblock %}
+
+{% block content %}
+    <!-- Título del gráfico -->
+    <section class="chart-section">
+        <h2 class="section-title">Gráfico de Barras Apiladas</h2>
+        <p class="chart-description">Datos: Platform, NA_sales, EU_sales, JP_Sales</p>
+        <p class="chart-description">Suma de los salarios de cada región y la plataforma de los videojuegos</p>
+    </section>
+        <!-- Contenedor para el gráfico -->
+        <div class="iframe-container">
+            <iframe 
+                src="https://datawrapper.dwcdn.net/CnV4N/2/" 
+                title="Gráfica interactiva"
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no">
+            </iframe>
+        </div>
+    <!-- Botón de regreso -->
+    <div class="back-button">
+        <a href="/Men" class="button">Volver al menú</a>
+    </div>
+{% endblock %}

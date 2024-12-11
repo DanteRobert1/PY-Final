@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Gráfica 4{% endblock %}
+
+{% block content %}
+<section class="chart-section">
+    <h2 class="section-title">Gráfico de Pastel</h2>
+    <p class="chart-description">Análisis de Ventas de ¨Plataformas y Globales</p>
+    <p class="chart-description">Datos: Genre, Global_sales </p>
+</section>
+    <!-- Incrustar la gráfica -->
+    <div>
+        {{ graph_html|safe }}
+    </div>
+    <section class="chart-section">
+    <p class="justified-text">
+        La gráfica de pastel muestra cómo se distribuyen las ventas globales de videojuegos entre los diferentes géneros. Cada sector representa un género, y el tamaño del sector es proporcional al volumen total de ventas globales de ese género. Los géneros con las porciones más grandes, como Action o Sports, son los más populares en términos de ventas globales, indicando una mayor demanda o un público más amplio.Este análisis puede ser útil para empresas que deseen invertir en géneros más exitosos o explorar oportunidades en géneros menos saturados, pero con potencial de crecimiento.
+    </p>
+    </section>
+    <div class="back-button">
+        <a href="/Men" class="button">Volver al menú</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Gráfica 3{% endblock %}
+
+{% block content %}
+<section class="chart-section">
+   <h2 class="section-title">Gráfico de dispersión interactiva</h2>
+    <p class="chart-description">Análisis de Ventas Regionales y Globales</p>
+    <p class="chart-description">Datos: Genre, NA_sales, EU_sales, JP_sales, Other_sales, Global_sales </p>
+    <p class="chart-description">Regional_Sales = NA_sales + EU_sales + JP_sales + Other_sales</p>
+</section>
+    <!-- Incrustar la gráfica -->
+    <div>
+        {{ graph_html|safe }}
+    </div>
+    <section class="chart-section">
+    <p class="justified-text">
+        En el gráfico de dispersión, se observa una interesante relación entre las ventas globales y las ventas en América del Norte, Europa y Japón, destacando las diferencias en el impacto regional de los videojuegos según su género. Los géneros como <strong>Sports</strong> y <strong>Shooter</strong> muestran una fuerte presencia en América del Norte, con títulos como <strong>Wii Sports</strong> alcanzando ventas impresionantes en esta región, superando los 40 millones de unidades. Este análisis resalta las diferencias culturales y de mercado entre regiones, permitiendo identificar cuáles géneros y plataformas tienen mayor éxito en cada zona, así como el impacto global de los títulos más destacados. Esto brinda a las empresas una guía para determinar qué productos podrían tener éxito en todas las regiones.
+    </p>
+</section>
+    <div class="back-button">
+        <a href="/Men" class="button">Volver al menú</a>
+    </div>
+{% endblock %}

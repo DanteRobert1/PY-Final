@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <div class="menu-container">
+        <!-- Gráfica 1 -->
+        <div class="menu-item">
+            <img src="/static/Imagen5.png" alt="Gráfica 1" class="menu-image">
+            <div class="graph-name">Comparativa entre ventas sobre las regiones</div>
+            <a href="/grafica1" class="button">Gráfica</a>
+        </div>
+
+        <!-- Gráfica 2 -->
+        <div class="menu-item">
+            <img src="/static/Imagen1.jpg" alt="Gráfica 2" class="menu-image">
+            <div class="graph-name">Evolución de ventas</div>
+            <a href="/grafica2" class="button">Gráfica</a>
+        </div>
+
+        <!-- Gráfica 3 -->
+        <div class="menu-item">
+            <img src="/static/Imagen4.jpeg" alt="Gráfica 3" class="menu-image">
+            <div class="graph-name">Ventas de Videojuegos (Regiones Combinadas)</div>
+            <a href="/grafica3" class="button">Gráfica</a>
+        </div>
+
+        <!-- Gráfica 4 -->
+        <div class="menu-item">
+            <img src="/static/Imagen2.jpg" alt="Gráfica 4" class="menu-image">
+            <div class="graph-name">Distribución de Ventas Globales por Género de Videojuegos</div>
+            <a href="/grafica4" class="button">Gráfica</a>
+        </div>
+
+        <!-- Gráfica 5 -->
+        <div class="menu-item">
+            <img src="/static/Imagen3.jpg" alt="Gráfica 5" class="menu-image">
+            <div class="graph-name">Distribución de Ventas Regionales por el Top 5 de Plataformas</div>
+            <a href="/grafica5" class="button">Gráfica</a>
+        </div>
+    <!-- Recomendaciones -->
+        <div class="menu-item">
+        <img src="/static/Problem1.png" alt="Recomendaciones" class="menu-image">
+        <div class="graph-name">Recomendaciones</div>
+        <a href="/Recomendaciones" class="button">Recomendaciones</a>
+        </div>
+    </div>
+{% endblock %}

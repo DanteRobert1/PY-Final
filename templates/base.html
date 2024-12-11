@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gráficas{% endblock %}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header id="header">
+        <img src="/static/Logos.jpg" alt="LogoGP" class="logo">
+        <a href="/" class="menu-itemHead" style="font-family: 'Century Gothic', sans-serif; color: white; font-size: 3.5em; margin: 0; text-decoration: none;">VIDEOJUEGOS</a>
+    </header>
+    
+    <main>
+        {% block content %}
+        <h1 class="big-text">VideoJuegos</h1>
+        {% endblock %}
+    </main>
+    
+    <script src="/static/script.js"></script> <!-- Script de JavaScript -->
+</body>
+</html>
